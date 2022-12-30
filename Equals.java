@@ -2,15 +2,15 @@ package Udemy.Arrays;
 
 public class Equals {
 
-    String nome;
+    String name;
     String Gmail;
 
     @Override
     public boolean equals(Object obj) {
-        Equals outro = (Equals) obj;
-        boolean nomeIgual = outro.nome.equals(this.nome);
-        boolean gmailIgual = outro.Gmail.equals(this.Gmail);
+        Equals other = (Equals) obj;
+        boolean nameEquals = other.name.equals(this.name);
+        boolean gmailEquals = other.Gmail.equals(this.Gmail);
 
-        return nomeIgual && gmailIgual;
+        return nameEquals && gmailEquals;
     }
 }
