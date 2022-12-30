@@ -25,17 +25,17 @@ public class Map1 {
 
         System.out.println(users.get(2));
 
-        for(int chave: users.keySet()){
-            System.out.println(chave);
+        for(int key1: users.keySet()){
+            System.out.println(key1);
         }
 
-        for (String valor: users.values()){
-            System.out.println(valor);
+        for (String values1: users.values()){
+            System.out.println(values1);
         }
 
-        for(Map.Entry<Integer, String> registro: users.entrySet()){
-            System.out.println(registro.getKey() + "");
-            System.out.println(registro.getValue());
+        for(Map.Entry<Integer, String> register: users.entrySet()){
+            System.out.println(register.getKey() + "");
+            System.out.println(register.getValue());
         }
 
     }
