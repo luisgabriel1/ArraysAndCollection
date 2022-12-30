@@ -4,26 +4,26 @@ import java.util.Scanner;
 
 public class Headquarters {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        System.out.println("Quantos alunos ?  ");
-        int qtdAlunos = entrada.nextInt();
+        System.out.println("How many students ?  ");
+        int amountStudents = input.nextInt();
 
-        System.out.println("Quantas notas por aluno ?  ");
-        int qtdNotas = entrada.nextInt();
+        System.out.println("How many notes per students?  ");
+        int amountNotes = input.nextInt();
 
-        double[][] notasDaTurma = new double [qtdAlunos] [qtdNotas];
+        double[][] notesOfGruop = new double [amountStudents] [amountsNotes];
 
         double total = 0;
-        for (int a = 0; a < notasDaTurma.length; a++){
-            for(int n = 0 ; n < notasDaTurma[a].length; n++){
-                System.out.printf("Informe a nota %d do aluno %d ", n + 1, a + 1 );
-                notasDaTurma[a] [n] = entrada.nextDouble();
-                total += notasDaTurma [a] [n];
+        for (int a = 0; a < notesOfGroup.length; a++){
+            for(int n = 0 ; n < notesOfGroup[a].length; n++){
+                System.out.printf("Inform the notes %d of students %d ", n + 1, a + 1 );
+                notesOfGroup[a] [n] = input.nextDouble();
+                total += notesOfGroup [a] [n];
             }
         }
-        double media = total / qtdAlunos * qtdNotas;
-        System.out.println("Media da turma é: " + media);
-        entrada.close();
+        double average = total / amoutStudents * amountNotes;
+        System.out.println("Average of group is: " + average);
+        input.close();
     }
 }
