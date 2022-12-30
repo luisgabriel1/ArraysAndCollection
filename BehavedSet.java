@@ -9,8 +9,8 @@ public class BehavedSet {
 
     public static void main(String[] args) {
 
-        //Set <String> list = new HashSet<>(); // Fica fora de ordem.
-        SortedSet <String> list = new TreeSet<>(); // Fica na ordem alfabetica.
+        //Set <String> list = new HashSet<>(); // Gets out of ordem.
+        SortedSet <String> list = new TreeSet<>(); // Stay in ordem aphabetical
         list.add("Ana");
         list.add("Carlos");
         list.add("Luca");
