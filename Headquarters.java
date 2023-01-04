@@ -22,7 +22,7 @@ public class Headquarters {
                 total += notesOfGroup [a] [n];
             }
         }
-        double average = total / amoutStudents * amountNotes;
+        double average = total / (amoutStudents * amountNotes);
         System.out.println("Average of group is: " + average);
         input.close();
     }
